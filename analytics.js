@@ -1,8 +1,7 @@
 /* Google Analytics 4 (gtag.js)
    Paste your Measurement ID below (it starts with G-).
    Every page loads this one file, so this is the only place to change it. */
-var GA_MEASUREMENT_ID = "G-XXXXXXXXXX";
-
+var GA_MEASUREMENT_ID = "G-GC15W1P348"
 if (GA_MEASUREMENT_ID.indexOf("XXXX") === -1) {
   var gaScript = document.createElement("script");
   gaScript.async = true;
