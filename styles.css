@@ -161,7 +161,7 @@ h3 {
 
 /* ---------- Buttons and links ---------- */
 a {
-  color: var(--primary);
+  color: #a08cff;
 }
 
 .button {
@@ -267,6 +267,154 @@ figcaption {
   text-align: center;
 }
 
+/* ---------- Inner pages ---------- */
+.page-intro {
+  padding: 32px 32px 0;
+}
+
+.page-intro h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.page-intro p {
+  max-width: 720px;
+}
+
+.content-section {
+  padding: 0 32px 16px;
+}
+
+.columns .content-section {
+  padding: 0;
+}
+
+.note {
+  color: #a9a3b8;
+  font-size: 0.9rem;
+}
+
+/* Video */
+.video-wrap video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background-color: #000000;
+}
+
+/* Release cards on the Music page */
+.release-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.release-card {
+  padding: 16px;
+  background-color: var(--secondary);
+  border-radius: 8px;
+}
+
+.release-card img,
+.art-grid img,
+.photo-grid img,
+.bio-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.release-card h3 {
+  margin: 12px 0 4px;
+}
+
+/* Gallery */
+.photo-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.art-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.photo-grid figcaption,
+.art-grid figcaption {
+  margin-top: 6px;
+  color: #a9a3b8;
+}
+
+.art-grid img:hover {
+  outline: 3px solid var(--accent);
+}
+
+/* About */
+.press-bio {
+  margin: 0;
+  padding: 4px 20px;
+  border-left: 4px solid var(--primary);
+  background-color: var(--secondary);
+  font-style: italic;
+}
+
+.facts dt {
+  margin-top: 10px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.facts dd {
+  margin: 0;
+}
+
+/* Booking form */
+.booking-form label {
+  display: block;
+  margin: 14px 0 6px;
+  font-weight: 600;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  background-color: var(--secondary);
+  color: var(--text);
+  border: 2px solid #3a3350;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.booking-form input[type="submit"] {
+  width: auto;
+  margin-top: 20px;
+  border: 2px solid var(--accent);
+  background-color: var(--accent);
+  color: #ffffff;
+  cursor: pointer;
+}
+
 /* ---------- Footer ---------- */
 footer {
   padding: 24px 32px;
@@ -301,5 +449,36 @@ footer p {
 
   .hero h2 {
     font-size: 1.7rem;
+  }
+
+  .release-grid,
+  .photo-grid,
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .art-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ---------- Phones ---------- */
+@media (max-width: 480px) {
+  .hero,
+  .columns,
+  .page-intro,
+  .content-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  th,
+  td {
+    padding: 8px 6px;
+    font-size: 0.85rem;
+  }
+
+  nav a {
+    padding: 12px 14px;
   }
 }
